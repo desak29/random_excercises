@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 <body ng-controller="myController">
-    Hello,{{first}} {{last}}
+<li ng-repeat="student in dcClass track by $index">
+    <a href="" data-ng-click="removeStudent($index)">{{student}}</a>
+</li>
+<form ng-submit="addStudent()">
+    <input type="text" ng-model="newStudent">
+    <!--connects through the scope so that ng-model new student is uploaded into list using addstudent() command-->
+    <input type="submit" value="addStudent">
+</form>
+
+<!--ng-submit is on click method-->
+<!--Hello,{{first}} {{last}}-->
 <!--this is the root element of the angular js application -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
+
 
 </body>
 </html>

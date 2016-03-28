@@ -11,12 +11,44 @@
 //})
 var myApp = angular.module('myApp', []);
 
-myApp.controller('myController', function($scope){
-        $scope.first ="Kochan";
-        $scope.last="Desai";
-//        dollar sign here will allow view to see anything ****
+myApp.controller('myController', function ($scope) {
+    //$scope.first ="Kochan";
+    //$scope.last="Desai";
+//        dollar sign here will allow view to see anything ****j
+    $scope.dcClass = [
 
+        //        {
+        //        name:'Tristan',
+        //        desc:'Stock Guy',
+        //        luckyNumber:12
+        //},{     name:'josh',
+        //        desc:'CSS Wizard',
+        //        luckyNumber:12
+        //
+        //},
+        'tristan',
+        'Josh',
+        'Bogden',
+        'lazlo',
+        'keith',
+        'jeremy',
+        'curtis',
+        'kochan',
+        'will',
+        'joe',
+        'jonathan',
+        'patrick'
 
+    ];
+    $scope.addStudent = function () {
+        $scope.dcClass.push($scope.newStudent);
+        $scope.newStudent = '';
+    };
+    $scope.removeStudent = function (index) {
+
+        $scope.dcClass.splice(index, 1);
+        console.log(newStudent)
+    }
 
 
 });

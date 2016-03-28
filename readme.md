@@ -39,3 +39,19 @@ unit testing ready
 very easy to add unit test 
 
 angular app takes pressure away from the do
+
+--remove item at specific case of index of array
+
+        ];
+$scope.addStudent = function(){
+        $scope.dcClass.push($scope.newStudent);
+        $scope.newStudent ='';
+};
+    $scope.removeStudent = function (index) {
+       
+                $scope.dcClass.splice(index,1);
+                console.log(newStudent)
+        }
+
+
+
