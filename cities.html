@@ -1,0 +1,24 @@
+<!doctype html>
+<html data-ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<body ng-controller="myController">
+<div id="student-list">
+    <li ng-repeat="city in cities track by $index">
+        {{city.name}}-{{city.population}}
+        {{city}}
+    </li>
+</div>
+
+<!--ng-submit is on click method-->
+<!--Hello,{{first}} {{last}}-->
+<!--this is the root element of the angular js application -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+
+
+</body>
+</html>
