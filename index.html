@@ -10,8 +10,32 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 
-<label>Name</label><input type="text" ng-model="name">
-Hello,{{name}}
+<!--<label>Name</label><input type="text" ng-model="name">-->
+
+<!--&lt;!&ndash;demonstrate two way binding, ng models are all tied together. they all control this expresssion data inputed into one field will go into next field.&ndash;&gt;-->
+<!--<label>Name 2</label><input type="text" ng-model="name">-->
+<!--<label>Name 3 </label><input type="text" ng-model="name">-->
+<!--<label>Name 4 </label><input type="text" ng-model="name_1">(***THIS WILL NOT WORK MUST USE CAMEL CASE)-->
+<!--<div ng-controller="addressForm">-->
+<!--<form novalidate class="simple-form">-->
+<label>First Name</label><input type="text" ng-model="first">
+<label>Last Name</label><input type="text" ng-model="last">
+    <!--<br />-->
+<!--<label>Address</label><input type="text" ng-model="address">-->
+    <!--<br />-->
+<!--<label>City</label><input type="text" ng-model="City">-->
+    <!--<br />-->
+<!--<label>State</label><input type="text" ng-model="State">-->
+    <!--<br />-->
+<!--<label>Zip</label><input type="text" ng-model="Zip">-->
+    <!--<br />-->
+<!--</form>-->
+<!--intersting to note as text is type text entry field in div is binded wiht input text -->
+Hello,{{first}} {{Last}}!
+
+
+
+    <
 <!--double curly brace means this is an angular expression-->
 
 

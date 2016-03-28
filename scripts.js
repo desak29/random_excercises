@@ -9,4 +9,14 @@
 //$('#myInput').keyup(function(){
 //    ('#inputText').html($('#myInput').val())
 //})
+var myApp = angular.module('myApp', []);
 
+myApp.controller('myController', function($scope){
+        $scope.first ="Kochan";
+        $scope.last="Desai";
+//        dollar sign here will allow view to see anything ****
+
+
+
+
+});
